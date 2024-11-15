@@ -1,0 +1,38 @@
+<!-- res/layout/activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/mainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fitness and Calorie Tracker"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnCalorieTracker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calorie Tracker" />
+
+    <Button
+        android:id="@+id/btnExerciseTracker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exercise Tracker"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnProgressTracker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Progress Summary"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
