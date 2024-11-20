@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    Layout file for the Update Goals Activity.
+    Allows users to enter new calorie and exercise goals,
+    save the updated goals, and navigate back to the home screen.
+-->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"

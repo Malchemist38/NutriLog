@@ -1,3 +1,9 @@
+/**
+ * Activity for updating user's daily goals.
+ * Allows users to set calorie and exercise goals, save them to the database, and navigate back
+ * to the main menu.
+ */
+
 package edu.utsa.cs3443.nutrilog;
 
 import android.content.Intent;

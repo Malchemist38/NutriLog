@@ -1,3 +1,9 @@
+/**
+ * Activity for viewing and tracking progress.
+ * Displays total calories consumed and burned, and provides a calendar for viewing past data
+ * and checking goal conformance.
+ */
+
 package edu.utsa.cs3443.nutrilog;
 
 import android.content.Intent;

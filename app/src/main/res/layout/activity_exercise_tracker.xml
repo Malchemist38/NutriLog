@@ -1,4 +1,9 @@
-<!-- res/layout/activity_exercise_tracker.xml -->
+<!--
+    Layout file for the Exercise Tracker Activity.
+    Includes input fields for exercise name and calories burned,
+    buttons for adding exercises and navigating back to the home screen,
+    and a TextView for displaying total calories burned for the day.
+-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"

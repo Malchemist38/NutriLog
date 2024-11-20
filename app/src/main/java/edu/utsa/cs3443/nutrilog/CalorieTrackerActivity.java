@@ -1,3 +1,9 @@
+/**
+ * Activity for tracking daily calorie intake.
+ * Allows users to add food items with calorie values, view total calories consumed for the day,
+ * and navigate back to the main menu.
+ */
+
 package edu.utsa.cs3443.nutrilog;
 
 import android.content.Intent;

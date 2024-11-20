@@ -1,3 +1,9 @@
+/**
+ * Main activity that serves as the entry point for the application.
+ * Provides navigation options to calorie tracker, exercise tracker,
+ * progress tracker, and update goals activities.
+ */
+
 package edu.utsa.cs3443.nutrilog;
 
 import android.content.Intent;

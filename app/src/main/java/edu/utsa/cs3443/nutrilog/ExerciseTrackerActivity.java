@@ -1,3 +1,9 @@
+/**
+ * Activity for tracking calories burned through exercise.
+ * Allows users to log exercises with calories burned, view total calories burned for the day,
+ * and navigate back to the main menu.
+ */
+
 package edu.utsa.cs3443.nutrilog;
 
 import android.content.Intent;

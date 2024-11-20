@@ -1,4 +1,9 @@
-<!-- res/layout/activity_main.xml -->
+<!--
+    Layout file for the Main Activity.
+    Provides navigation buttons to access different activities:
+    calorie tracker, exercise tracker, progress tracker, and update goals.
+    Includes a title TextView for the app's name.
+-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"

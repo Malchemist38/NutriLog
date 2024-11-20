@@ -1,3 +1,9 @@
+/**
+ * Helper class for managing SQLite database operations.
+ * Manages tables for food, exercise, and daily goals. Provides methods for CRUD operations
+ * and data aggregation for calorie tracking and progress monitoring.
+ */
+
 package edu.utsa.cs3443.nutrilog;
 
 import android.content.ContentValues;

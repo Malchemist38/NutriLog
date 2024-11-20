@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    Layout file for the Progress Tracker Activity.
+    Displays summaries of calories consumed and burned,
+    includes a CalendarView for selecting dates to view data,
+    and buttons for clearing data and navigating back to the home screen.
+-->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"

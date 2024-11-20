@@ -1,4 +1,9 @@
-<!-- res/layout/activity_calorie_tracker.xml -->
+<!--
+    Layout file for the Calorie Tracker Activity.
+    Provides fields for entering food name and calories,
+    buttons for adding food and navigating back to the home screen,
+    and a TextView for displaying daily calorie consumption.
+-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
