@@ -7,39 +7,39 @@
     android:padding="16dp">
 
     <TextView
-        android:id="@+id/summaryCalories"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Total Calories Consumed: 0"
-        android:textSize="18sp"
-        android:layout_marginBottom="8dp" />
-
-    <TextView
-        android:id="@+id/summaryBurned"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Total Calories Burned: 0"
+        android:text="Update Calorie and Exercise Goals"
         android:textSize="18sp"
         android:layout_marginBottom="16dp" />
 
-    <CalendarView
-        android:id="@+id/calendarView"
+    <EditText
+        android:id="@+id/inputCalorieGoal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="Enter new calorie goal"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/inputExerciseGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter new exercise goal"
+        android:inputType="number"
         android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnSaveGoals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Goals"
+        android:layout_gravity="center_horizontal" />
 
     <Button
         android:id="@+id/btnBackToHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back to Home"
-        android:layout_gravity="center_horizontal" />
-
-    <Button
-        android:id="@+id/btnClearData"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Clear Data"
-        android:layout_gravity="center_horizontal" />
-
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
 </LinearLayout>

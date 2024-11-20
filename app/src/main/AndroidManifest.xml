@@ -24,6 +24,7 @@
         <activity android:name=".CalorieTrackerActivity" />
         <activity android:name=".ExerciseTrackerActivity" />
         <activity android:name=".ProgressTrackerActivity" />
+        <activity android:name="UpdateGoalsActivity" />
     </application>
 
 </manifest>

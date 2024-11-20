@@ -7,7 +7,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private Button btnCalorieTracker, btnExerciseTracker, btnProgressTracker;
+    private Button btnCalorieTracker, btnExerciseTracker, btnProgressTracker, btnUpdateGoals;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,9 +17,11 @@ public class MainActivity extends AppCompatActivity {
         btnCalorieTracker = findViewById(R.id.btnCalorieTracker);
         btnExerciseTracker = findViewById(R.id.btnExerciseTracker);
         btnProgressTracker = findViewById(R.id.btnProgressTracker);
+        btnUpdateGoals = findViewById(R.id.btnUpdateGoals);
 
         btnCalorieTracker.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, CalorieTrackerActivity.class)));
         btnExerciseTracker.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, ExerciseTrackerActivity.class)));
         btnProgressTracker.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, ProgressTrackerActivity.class)));
+        btnUpdateGoals.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, UpdateGoalsActivity.class)));
     }
 }

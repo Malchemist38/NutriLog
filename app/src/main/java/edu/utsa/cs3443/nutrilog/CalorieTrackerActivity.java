@@ -1,5 +1,6 @@
 package edu.utsa.cs3443.nutrilog;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -31,6 +32,22 @@ public class CalorieTrackerActivity extends AppCompatActivity {
             updateCalorieCount();
         });
 
+        Button btnBackToHome = findViewById(R.id.btnBackToHome);
+
+        btnBackToHome.setOnClickListener(v -> {
+            // Navigate back to the MainActivity
+            Intent intent = new Intent(CalorieTrackerActivity.this, MainActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+            finish(); // Close the current activity
+        });
+
+        updateCalorieCount();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
         updateCalorieCount();
     }
 
@@ -38,4 +55,5 @@ public class CalorieTrackerActivity extends AppCompatActivity {
         int totalCalories = db.getTotalCalories();
         dailyCalories.setText("Calories Today: " + totalCalories);
     }
+
 }
