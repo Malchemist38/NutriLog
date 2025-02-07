@@ -40,13 +40,11 @@ public class ExerciseTrackerActivity extends AppCompatActivity {
 
         Button btnBackToHome = findViewById(R.id.btnBackToHome);
 
-        // Set the click listener
         btnBackToHome.setOnClickListener(v -> {
-            // Navigate back to the MainActivity
             Intent intent = new Intent(ExerciseTrackerActivity.this, MainActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
-            finish(); // Close the current activity
+            finish();
         });
 
         updateBurnedCalories();

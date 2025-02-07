@@ -41,11 +41,11 @@ public class CalorieTrackerActivity extends AppCompatActivity {
         Button btnBackToHome = findViewById(R.id.btnBackToHome);
 
         btnBackToHome.setOnClickListener(v -> {
-            // Navigate back to the MainActivity
+
             Intent intent = new Intent(CalorieTrackerActivity.this, MainActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
-            finish(); // Close the current activity
+            finish();
         });
 
         updateCalorieCount();

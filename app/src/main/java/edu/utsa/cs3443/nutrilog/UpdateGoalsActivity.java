@@ -30,7 +30,6 @@ public class UpdateGoalsActivity extends AppCompatActivity {
         Button btnSaveGoals = findViewById(R.id.btnSaveGoals);
         Button btnBackToHome = findViewById(R.id.btnBackToHome);
 
-        // Save button logic
         btnSaveGoals.setOnClickListener(v -> {
             String calorieGoalStr = inputCalorieGoal.getText().toString();
             String exerciseGoalStr = inputExerciseGoal.getText().toString();
@@ -51,8 +50,7 @@ public class UpdateGoalsActivity extends AppCompatActivity {
                 Toast.makeText(this, "Please enter valid values for both goals.", Toast.LENGTH_SHORT).show();
             }
         });
-
-        // Back to Home button logic
+        
         btnBackToHome.setOnClickListener(v -> {
             Intent intent = new Intent(UpdateGoalsActivity.this, MainActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);

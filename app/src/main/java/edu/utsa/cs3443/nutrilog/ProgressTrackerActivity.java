@@ -39,7 +39,6 @@ public class ProgressTrackerActivity extends AppCompatActivity {
         Button btnBackToHome = findViewById(R.id.btnBackToHome);
         Button btnClearData = findViewById(R.id.btnClearData);
 
-        // Back to Home logic
         btnBackToHome.setOnClickListener(v -> {
             Intent intent = new Intent(ProgressTrackerActivity.this, MainActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -47,17 +46,14 @@ public class ProgressTrackerActivity extends AppCompatActivity {
             finish();
         });
 
-        // Clear Data logic
         btnClearData.setOnClickListener(v -> {
             db.clearDatabase();
             Toast.makeText(this, "All data cleared!", Toast.LENGTH_SHORT).show();
             updateSummary(); // Refresh to show cleared data
         });
 
-        // Update summaries
         updateSummary();
 
-        // Setup calendar
         setupCalendar();
     }
 
